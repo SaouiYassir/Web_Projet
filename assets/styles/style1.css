@@ -118,13 +118,6 @@ main {
     text-align: center;
   }
 
-  /* About_us Section */
-  main .about_us {
-    width: 100%;
-    height: 100vh;
-    background-color: red;
-  }
-
   /* Categories class */
   main .categories {
     width: 100%;
@@ -466,5 +459,44 @@ main {
     font-size: 18px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
+  }
+
+  /* Footer Part */
+  footer {
+    background-color: #121e3f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_all {
+    width: 100%;
+    display: flex;
+  }
+  footer .footer_all .footer_left {
+    width: 50%;
+  }
+  footer .footer_all .footer_form {
+    width: 50%;
+    margin-top: 90px;
+  }
+  footer img {
+    width: 250px;
+  }
+  footer .social_media_part a {
+    color: #2980b9;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  footer .copyright {
+    width: 100%;
+    background-color: rgb(44, 42, 42);
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
   }
 }
