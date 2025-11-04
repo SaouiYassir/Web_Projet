@@ -118,12 +118,6 @@ main {
     text-align: center;
   }
 
-  /* About_us Section */
-  main .about_us {
-    width: 100%;
-    height: 100vh;
-    background-color: red;
-  }
 
   /* Categories class */
   main .categories {
