@@ -561,6 +561,9 @@ main {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
   }
+  footer .footer_all .footer_form .footer_form_connect input::placeholder {
+    color: white;
+  }
   footer .footer_all .footer_form .footer_form_connect button {
     width: 20%;
     height: 40px;
