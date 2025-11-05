@@ -488,9 +488,32 @@ main {
   }
   footer .footer_all .short_links {
     width: 10%;
-    margin-top: 90px;
+    margin-top: 140px;
     height: 100%;
-    
+  }
+  footer .footer_all .short_links .links_num_1 {
+    color: #2980b9;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 18px;
+  }
+  footer .footer_all .short_links .links_num_1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  footer .footer_all .short_links .links_num_2 {
+    color: #2980b9;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 18px;
+  }
+  footer .footer_all .short_links .links_num_2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
   }
   footer .footer_all .footer_form {
     width: 50%;
