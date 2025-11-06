@@ -461,6 +461,7 @@ main {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
+  
 
   /* Footer Part */
   footer {
@@ -469,12 +470,28 @@ main {
     display: flex;
     flex-direction: column;
   }
+  footer .cars_links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+  }
+  footer .cars_links img {
+    width: 150px;
+    opacity: 40%;
+    transition: 0.5s;
+  }
+  footer .cars_links img:hover {
+    opacity: 100%;
+  }
   footer .footer_all {
     width: 100%;
     display: flex;
   }
   footer .footer_all .footer_left {
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -488,7 +505,7 @@ main {
     text-align: center;
   }
   footer .footer_all .short_links {
-    width: 10%;
+    width: 20%;
     margin-top: 30px;
     height: 100%;
   }
@@ -498,6 +515,7 @@ main {
     flex-direction: column;
     line-height: 2;
     font-size: 18px;
+    margin-left: 80px;
   }
   footer .footer_all .short_links .links_num_1 a {
     text-decoration: none;
@@ -511,6 +529,7 @@ main {
     flex-direction: column;
     line-height: 2;
     font-size: 18px;
+    margin-left: 80px;
   }
   footer .footer_all .short_links .links_num_2 a {
     text-decoration: none;
