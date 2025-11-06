@@ -22,6 +22,12 @@ main {
     transition: 0.5s;
     z-index: 100;
   }
+  header .links_side_bar{
+    display: none;
+  }
+   header .menu_bar {
+    display: none;
+   }
   header .logo_header {
     width: 15%;
     justify-content: center;
