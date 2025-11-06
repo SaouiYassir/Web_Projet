@@ -631,3 +631,97 @@ main {
     font-size: 15px;
   }
 }
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: #121E3F;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 40px;
+        transition: 0.5s;
+        z-index: 100;
+        color: white;
+    }
+    header .links, header .account {
+        display: none;
+    }
+    header .logo_header {
+        width: 60%;
+        justify-content: first baseline;
+        display: flex;
+    }
+    header .logo_header img {
+        width: 80%;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    header .menu_bar {
+        width: 30%;
+        justify-content: end;
+        display: flex;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    header .menu_bar a {
+        text-decoration: none;
+        color: white;
+    }
+    header .links a {
+        position: absolute;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    header .links_side_bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: #0f2e8552;
+        backdrop-filter: blur(10px);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px;
+        gap: 70px;
+    }
+    header .links_side_bar .close_icon {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    header .links_side_bar ul {
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        margin-top: 40px;
+    }
+    header .links_side_bar ul li {
+        width: 100%;
+    }
+    header .links_side_bar ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 100%;
+        color: white;
+    }
+    header.active {
+        position: fixed;
+        background-color: #121E3F;
+        color: white;
+        height: 60px;
+    }
+    header.active .logo_header img {
+        width: 150px;
+    }
+}

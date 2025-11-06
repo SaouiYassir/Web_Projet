@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/styles/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/png">
     <title>Home</title>
@@ -25,6 +26,20 @@
         <div class="account">
             <a href=""><img src="assets/icons/right-to-bracket-solid-full.svg" alt=""></a>
             <a href=""><img src="assets/icons/user-plus-solid-full.svg" alt=""></a>
+        </div>
+        <nav class="links_side_bar">
+            <div class="close_icon">
+                <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+            </div>
+            <ul>
+                <li><a onclick="clicklink()" href="#about_us">About Us</a></li>
+                <li><a onclick="clicklink()" href="#categories">Categories</a></li>
+                <li><a onclick="clicklink()" href="#services">Services</a></li>
+                <li><a onclick="clicklink()" href="#contact_us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu_bar" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
 

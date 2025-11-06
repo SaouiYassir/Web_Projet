@@ -18,3 +18,17 @@ logo_header.addEventListener("click",()=> {
         behavior:"smooth"
     })
 })
+
+
+function openNav() {
+    const Sidebar = document.querySelector('header .links_side_bar')
+    Sidebar.style.display = 'flex'
+}
+function closeNav() {
+    const Sidebar = document.querySelector('header .links_side_bar')
+    Sidebar.style.display = 'none'
+}
+function clicklink() {
+    const Sidebar = document.querySelector('header .links_side_bar')
+    Sidebar.style.display = 'none'
+}
