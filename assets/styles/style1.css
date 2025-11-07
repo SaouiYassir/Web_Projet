@@ -695,9 +695,10 @@ main {
         display: none;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         justify-content: flex-start;
         padding: 40px;
-        gap: 70px;
+        gap: 20px;
     }
     header .links_side_bar .close_icon {
         color: white;
@@ -721,6 +722,14 @@ main {
         width: 100%;
         color: white;
     }
+    header .links_side_bar .sidebar_account {
+      width: 25%;
+    }
+    header .links_side_bar .sidebar_account {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
     header.active {
         position: fixed;
         background-color: #121E3F;
@@ -729,5 +738,16 @@ main {
     }
     header.active .logo_header img {
         width: 150px;
+    }
+
+
+    /* main part */
+    main img {
+      width: 100%;
+    }
+
+    /* footer part */
+    footer img {
+      width: 100%;
     }
 }
