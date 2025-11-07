@@ -32,3 +32,7 @@ function clicklink() {
     const Sidebar = document.querySelector('header .links_side_bar')
     Sidebar.style.display = 'none'
 }
+function clickanywhere() {
+    const Sidebar = document.querySelector('header .links_side_bar')
+    Sidebar.style.display = 'none'
+}
