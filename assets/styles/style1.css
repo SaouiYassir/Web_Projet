@@ -97,36 +97,32 @@ main {
    }
 
   /* Hero Section */
-  main .hero .hero_div {
+  main .hero {
     width: 100%;
-    height: 780px;
+    height: 100vh;
     background-image: url(../imgs/hero_background.jpg);
     background-position: 50% 50%;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 400px;
   }
   main .hero h1 {
    color: #e9ebef;
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-left: 20%;
-    top: 30%;
     font-size: 55px;
-
-    position: absolute;
     font-family: "Momo Trust Display", sans-serif;
+    padding: 60px 0;
   }
-  main .hero .hero_div p {
+  main .hero p {
     color: rgb(232, 233, 235);
     text-align: center;
     font-size: 25px;
     display: flex;
     justify-content: center;
-    padding: 70px;
-    padding-top: 35%;
   }
 
   /* Categories class */
