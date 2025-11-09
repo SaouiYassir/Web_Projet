@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/style2.css">
+    <link rel="stylesheet" href="../assets/styles/style3.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/png">
-    <title>Login Page</title>
+    <title>Register Page</title>
 </head>
 <body>
     <header class="myHeader">
@@ -22,8 +22,8 @@
             <a href="../index.html#contact_us">Contact Us</a>
         </nav>
         <div class="account">
-            <a href="../Register_page/Register.html">Register</a>
-            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="../Login_page/login.html">Login</a>
         </div>
         <nav class="links_side_bar">
             <div class="close_icon">
@@ -33,8 +33,8 @@
                 <li><a onclick="clicklink()" href="../index.html#categories">Categories</a></li>
                 <li><a onclick="clicklink()" href="../index.html#services">Services</a></li>
                 <li><a onclick="clicklink()" href="../index.html#contact_us">Contact Us</a></li>
-                <li><a onclick="clicklink()" class="account_side_bar" href="#">Login</a></li>
-                <li><a onclick="clicklink()" class="account_side_bar" href="../Register_page/Register.html">Register</a></li>
+                <li><a onclick="clicklink()" class="account_side_bar" href="../Login_page/login.html">Login</a></li>
+                <li><a onclick="clicklink()" class="account_side_bar" href="#">Register</a></li>
             </ul>
         </nav>
         <div class="menu_bar" onclick="openNav()">
@@ -44,21 +44,27 @@
 
     <main onclick="clickanywhere()">
         <div class="left">
-            <h1>Welcome Back</h1>
+            <h1>CREATE ACCOUNT</h1>
             <form action="">
+                <input type="text" placeholder="Full Name" required>
                 <input required placeholder="Email" type="email">
                 <input required placeholder="Password" type="password">
+                <input required placeholder=" Confirme Password" type="password">
+                <div class="terms">
+                    <input type="checkbox" required>
+                    <label for="">I agree all statements in <a href="">Terms of service</a></label>
+                </div>
                 <button type="submit">Sign In</button>
             </form>
             <fieldset>
                 <legend>Or</legend>
             </fieldset>
-            <a class="signin_platforms" href=""><img src="../assets/icons/google.svg" alt="">Sign in with Google</a>
-            <a class="signin_platforms" href=""><img src="../assets/icons/apple.svg" alt="">Sign in with Apple</a>
-            <p>Don't you have any account? <a href="../Register_page/Register.html" class="signup">Sign up</a></p>
+            <a class="signin_platforms" href=""><img src="..//assets/icons/google.svg" alt="">Sign in with Google</a>
+            <a class="signin_platforms" href=""><img src="..//assets/icons/apple.svg" alt="">Sign in with Apple</a>
+            <p>Already have an account? <a href="../Login_page/login.html" class="signup">Sign in</a></p>
         </div>
         <div class="right">
-            <img src="../assets/imgs/Login_background.jpg" alt="">
+            <img src="../assets/imgs/Register_background.png" alt="">
         </div>
     </main>
 
