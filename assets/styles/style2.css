@@ -649,7 +649,7 @@
         color: white;
     }
     header .links_side_bar {
-        position: fixed;
+    position: fixed;
         top: 0;
         right: 0;
         height: 100vh;
@@ -662,12 +662,15 @@
         align-items: center;
         justify-content: flex-start;
         padding: 40px;
-        gap: 70px;
+        gap: 50px;
     }
     header .links_side_bar .close_icon {
-        color: white;
-        font-size: 20px;
+        color: #121E3F;
+        background-color: white;
+        font-size: 16px;
         cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
     }
     header .links_side_bar ul {
         position: relative;
@@ -675,8 +678,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 80px;
-        margin-top: 40px;
+        gap: 60px;
+        margin-top: 30px;
     }
     header .links_side_bar ul li {
         width: 100%;
@@ -687,22 +690,22 @@
         width: 100%;
         color: white;
     }
-    header .links_side_bar ul .account_side_bar {
-      background-color: white;
-      padding: 10px;
-      border-radius: 10px;
-      transition: 0.5s;
-      color: #121E3F;
-    }
-    header.active {
-        position: fixed;
-        background-color: #121E3F;
-        color: white;
-        height: 60px;
-    }
-    header.active .logo_header img {
-        width: 80px;
-    }
+  header .links_side_bar ul .account_side_bar {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #121E3F;
+  }
+  header.active {
+    position: fixed;
+    background-color: #121E3F;
+    color: white;
+    height: 60px;
+  }
+  header.active .logo_header img {
+    width: 80px;
+  }
 
 
     /* main part */
