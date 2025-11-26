@@ -718,6 +718,256 @@ main {
     font-size: 25px;
   }
 
+  /* Services section */
+  .services_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+  }
+
+  .services_section .title {
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2980b9;
+    padding: 10px 20px;
+  }
+
+  .title h2 {
+    font-size: 46px;
+    text-align: center;
+    color: white;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .title h2::after{
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+  }
+
+  .title p {
+    text-align: center;
+    color: white;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
+
+  .services_section .services_cards {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    top: 15%;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .services_cards .card {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 white;
+    padding: 20px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card h4 {
+    color: #2980b9;
+    text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card a {
+    padding: 16px 32px;
+    background-color: #2980b9;
+    position: relative;
+    text-decoration: none;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    border-radius: 32px;
+  }
+
+  /* Contact Us Section */
+
+  .ContactUs_Section {
+    width: 100%;
+    position: relative;
+  }
+
+  .ContactUs_Section .ContactUs_Part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .ContactUs_Part1 .ContactUs_content {
+    width: 100%;
+    height: 60%;
+    border: none;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ContactUs_content h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 33px;
+    text-align: center;
+    color: #2980b9;
+
+  }
+
+  .ContactUs_content p {
+    color: #2980b9;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .ContactUs_content hr {
+    width: 50%;
+    border: 1px solid #2980b9;
+  }
+
+  .ContactUs_content form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .ContactUs_content form input {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 40px;
+    padding: 0 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+  }
+
+  .ContactUs_content form input::placeholder {
+    color: black;
+  }
+  .ContactUs_content form button {
+    width: 30%;
+    margin-top: 10px;
+    height: 40px;
+    background-color: #2980b9;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .ContactUs_Part1 .ContactUs_image {
+    width: 100%;
+  }
+
+  .ContactUs_Section .ContactUs_Part2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #2980b9;
+  }
+
+  .ContactUs_Part2 .social_card {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    gap: 20px;
+    border-radius: 8px;
+    color: #2980b9;
+  }
+  .social_card div {
+    display: flex;
+    align-items: bottom;
+    justify-content: left;
+    gap: 10px;
+    font-size: 22px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .social_card .infos {
+    color: black;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
   main .shopping_cart {
     display: none;
   }
@@ -1010,8 +1260,8 @@ main {
     background-color: white;
     padding: 15px;
     border-radius: 20px;
-    height: 300px;
     justify-content: space-around;
+    gap: 30px;
   }
   main .categories .categories_div .nouveau_piece,
   main .categories .categories_div .ancien_piece {
@@ -1035,22 +1285,20 @@ main {
     color: #121e3f;
     font-size: 15px;
   }
+
   /* Services section */
   .services_section {
     width: 100%;
-    height: 300vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-    position: relative;
   }
 
   .services_section .title {
     width: 100%;
     height: 15%;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -1060,7 +1308,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #2980b9;
-    padding: 0 10px;
+    padding: 10px 20px;
   }
 
   .title h2 {
@@ -1101,7 +1349,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    position: absolute;
     left: 0;
     right: 0;
     top: 15%;
@@ -1149,6 +1396,8 @@ main {
     color: white;
     border-radius: 32px;
   }
+
+  /* Contact Us Section */
 
   .ContactUs_Section {
     width: 100%;
@@ -1242,7 +1491,6 @@ main {
 
   .ContactUs_Part1 .ContactUs_image {
     width: 100%;
-    height: 300px;
   }
 
   .ContactUs_Section .ContactUs_Part2 {
