@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 /* All The Main Part */
 main {
   width: 100%;
@@ -79,8 +80,8 @@ main {
   }
   header .account {
     display: flex;
-    gap: 30px;
     justify-content: center;
+    width: 10%;
   }
   header .account a {
     text-decoration: none;
@@ -89,8 +90,6 @@ main {
     border-radius: 10px;
     transition: 0.5s;
     color: #121E3F;
-    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
-      "Times New Roman", serif;
   }
 
   /* Main Part */
@@ -112,6 +111,7 @@ main {
     justify-content: center;
     font-size: 55px;
     font-family: "Momo Trust Display", sans-serif;
+  
     margin-top: 40px;
   }
 
@@ -136,10 +136,6 @@ main {
     width: 100%;
     height: 85%;
     background-color: #121e3f;
-    background-image: url(../imgs/categories_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     padding: 60px 0;
     display: flex;
     justify-content: space-around;
@@ -151,11 +147,10 @@ main {
   }
   main .categories .categories_div .old_pieces, main .categories .categories_div .new_pieces {
     width: 25%;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.5);
     padding: 30px;
     border-radius: 20px;
     height: 60vh;
@@ -176,6 +171,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  main .categories .categories_div .nouveau_piece:hover, main .categories .categories_div .ancien_piece:hover {   
+    background-color: #2980b9;
+    transition: 0.3s;
   }
   main .categories .categories_div h3 {
     font-family: "Momo Trust Display", sans-serif;
@@ -416,6 +416,10 @@ main {
     align-items: center;
   }
 
+  main .shopping_cart {
+    display: none;
+  }
+
   /* Footer Part */
   footer {
     background-color: #121e3f;
@@ -651,7 +655,6 @@ main {
   /* Categories Section */
   main .categories {
     width: 100%;
-    height: 80vh;
   }
   main .categories h1 {
     text-align: center;
@@ -669,26 +672,22 @@ main {
     width: 100%;
     height: 85%;
     background-color: #121e3f;
-    background-image: url(../imgs/categories_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     padding: 60px 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    gap: 60px;
   }
   main .categories .categories_div .old_pieces img,
   main .categories .categories_div .new_pieces img {
     width: 100%;
   }
   main .categories .categories_div .old_pieces, main .categories .categories_div .new_pieces {
-    width: 25%;
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
     padding: 30px;
     border-radius: 20px;
     height: 55vh;
@@ -716,6 +715,9 @@ main {
     font-size: 25px;
   }
 
+  main .shopping_cart {
+    display: none;
+  }
 
 
 
@@ -982,7 +984,6 @@ main {
   /* Categories Section */
   main .categories {
     width: 100%;
-    height: 50vh;
   }
   main .categories h1 {
     text-align: center;
@@ -1000,29 +1001,25 @@ main {
     width: 100%;
     height: 85%;
     background-color: #121e3f;
-    background-image: url(../imgs/categories_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     padding: 60px 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    gap: 60px;
   }
   main .categories .categories_div .old_pieces img,
   main .categories .categories_div .new_pieces img {
     width: 100%;
   }
   main .categories .categories_div .old_pieces, main .categories .categories_div .new_pieces {
-    width: 43%;
+    width: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
     padding: 15px;
     border-radius: 20px;
-    height: 35vh;
+    height: 300px;
     justify-content: space-around;
   }
   main .categories .categories_div .nouveau_piece, main .categories .categories_div .ancien_piece {
@@ -1045,6 +1042,19 @@ main {
     font-family: "Momo Trust Display", sans-serif;
     color: #121e3f;
     font-size: 15px;
+  }
+  /* Shopping Icon*/
+  main .shopping_cart {
+    color: white;
+    background-color: #2980b9;
+    padding: 15px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
   }
 
 
