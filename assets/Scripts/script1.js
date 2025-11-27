@@ -1,3 +1,6 @@
+gsap.fromTo(".hero .title",{opacity:0,y:-50},{opacity:1,y:0,duration:1})
+
+
 let myHeader = document.getElementsByClassName("myHeader")[0];
 let logo_header = document.getElementsByClassName("logo_header")[0];
 
