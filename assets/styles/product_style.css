@@ -439,6 +439,10 @@ footer .copyright {
   font-size: 15px;
 }
 
+main .shopping_cart {
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -583,6 +587,20 @@ footer .copyright {
 
   .product_buttons .buttons {
     gap: 15px;
+  }
+
+  main .shopping_cart {
+    display: block;
+    color: white;
+    background-color: #2980b9;
+    padding: 15px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
   }
 
   footer .footer_all {
