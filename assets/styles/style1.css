@@ -205,14 +205,14 @@ main {
     align-items: center;
     justify-content: center;
     background-color: white;
-    padding: 0 40px;
+    padding: 0px 50px;
   }
   .title h2 {
     color: #2980b9;
     font-family: "Momo Trust Display", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 55px;
+    font-size: 50px;
     position: relative;
     margin-bottom: 20px;
   }
