@@ -539,4 +539,56 @@ main .shopping_cart {
     z-index: 1000;
     font-size: 20px;
   }
+
+  /* Footer */
+
+  footer .footer_all {
+    flex-direction: column-reverse;
+  }
+
+  footer .footer_all .footer_left {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  footer .footer_all .footer_left p {
+    font-size: 12px;
+  }
+
+  footer .social_media_part img {
+    width: 25px;
+  }
+
+  footer .footer_all .footer_form {
+    width: 100%;
+  }
+
+  footer .footer_all .footer_form .footer_form_connect h4 {
+    font-size: 18px;
+  }
+
+  footer .footer_all .footer_form .footer_form_connect input {
+    width: 60%;
+  }
+
+  footer .footer_all .footer_form .footer_form_connect button {
+    width: 25%;
+  }
+
+  footer .footer_all .footer_form .about_us {
+    padding: 10px 20px;
+  }
+
+  footer .footer_all .footer_form .about_us h2 {
+    font-size: 18px;
+    
+  }
+
+  footer .footer_all .footer_form .about_us p {
+    padding: 10px 0;
+  }
+
+  footer .copyright {
+    font-size: 10px;
+  }
 }
