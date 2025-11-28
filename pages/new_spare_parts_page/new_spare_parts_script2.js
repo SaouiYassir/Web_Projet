@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBar = document.querySelector('.menu_bar');
+    const sideBar = document.querySelector('.links_side_bar');
+    const closeIcon = document.querySelector('.close_icon');
+    
+    menuBar.addEventListener('click', function() {
+        sideBar.classList.add('open');
+    });
+    
+    closeIcon.addEventListener('click', function() {
+        sideBar.classList.remove('open');
+    });
+});
+
 import new_products from "../API/new_spare_api.js"
 
 const urlParams = new URLSearchParams(window.location.search);
