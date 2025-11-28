@@ -396,6 +396,10 @@ footer .copyright {
   font-size: 15px;
 }
 
+main .shopping_cart {
+  display: none;
+}
+
 @media (max-width: 768px) {
   header {
     width: 100%;
@@ -500,5 +504,39 @@ footer .copyright {
     border-radius: 10px;
     transition: 0.5s;
     color: #121e3f;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main .tite_container {
+    height: 100px;
+  }
+
+  main .carousel_container {
+    display: none;
+  }
+
+  .tite_container h2 {
+    font-size: 25px;
+  }
+
+
+
+
+  /* Shopping Icon*/
+  main .shopping_cart {
+    display: block;
+    color: white;
+    background-color: #2980b9;
+    padding: 15px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
   }
 }
