@@ -4,11 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/styles/new_spare_parts_style.css">
+    <link rel="stylesheet" href="../../assets/styles/new&old_spare_parts_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <title>Old Spare Part</title>
 </head>
 
 <body>
+    <header class="myHeader">
+        <div class="logo_header">
+            <img src="../../assets/imgs/logo.png" alt="Logo" id="logo_header" onclick="clickanywhere()">
+        </div>
+        <nav class="links">
+            <a href="../../index.html#categories">Categories</a>
+            <a href="../../index.html#services_section">Services</a>
+            <a href="../../index.html#ContactUs_Section">Contact Us</a>
+        </nav>
+        <div class="account">
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <nav class="links_side_bar">
+            <div class="close_icon">
+                <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+            </div>
+            <ul>
+                <li><a onclick="clicklink()" href="../../index.html#categories">Categories</a></li>
+                <li><a onclick="clicklink()" href="../../index.html#services_section">Services</a></li>
+                <li><a onclick="clicklink()" href="../../index.html#ContactUs_Section">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu_bar" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
 
     <main>
         <div class="tite_container">
@@ -30,6 +62,51 @@
         </div>
     </main>
 
+    <footer onclick="clickanywhere()">
+        <div class="footer_all">
+            <div class="footer_left">
+                <p>
+                    +212 5XX-XXXX56 <br>
+                    +212 5XX-XXXX23 <br><br>
+                    luxury-cars-services@mail.com <br>
+                    luxury-client-service@mail.com <br><br>
+                    Boulevard Mohamed V, <br>
+                    Près du café Zeitoun, <br>
+                    Guéliz, Marrakech.
+                </p>
+                <div class="social_media_part">
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="assets/icons/facebook-f-brands-solid-full.svg" alt=""></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="assets/icons/instagram-brands-solid-full.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img
+                            src="assets/icons/linkedin-in-brands-solid-full.svg" alt=""></i></a>
+                </div>
+            </div>
+            <div class="footer_form">
+                <div class="footer_form_connect">
+                    <h4>STAY CONNECTED</h4>
+                    <form action="">
+                        <input type="email" required name="email" placeholder="Email Address">
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+                <div class="about_us">
+                    <h2>About Us :</h2>
+                    <p>
+                        Our platform specializes in selling new and used spare parts for luxury cars, including brands
+                        like Audi, Mercedes, and BMW. We provide an easy online ordering and reservation system, with an
+                        optional repair service and 24/7 customer support. Combining performance, reliability, and
+                        intuitive design, our website ensures a smooth and complete user experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2025 Luxe Cars | Designed by <b>Yassir SAOUI, Mohammed EL MOUTAOUAKIL, Aymane
+                    HAMOUCH</b></p>
+        </div>
+    </footer>
 </body>
 <script type="module" src="old_spare_parts_script1.js"></script>
 
