@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/style2.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header class="myHeader">
+        <div class="logo_header">
+            <img src="../assets/imgs/logo.png" alt="Logo" id="logo_header" onclick="clickanywhere()">
+        </div>
+        <nav class="links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#categories">Categories</a>
+            <a href="../index.html#services_section">Services</a>
+            <a href="../index.html#ContactUs_Section">Contact Us</a>
+        </nav>
+        <div class="account">
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <nav class="links_side_bar">
+            <div class="close_icon">
+                <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+            </div>
+            <ul>
+                <li><a onclick="clicklink()" href="../index.html">Home</a></li>
+                <li><a onclick="clicklink()" href="../index.html#categories">Categories</a></li>
+                <li><a onclick="clicklink()" href="../index.html#services_section">Services</a></li>
+                <li><a onclick="clicklink()" href="../index.html#ContactUs_Section">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="menu_bar" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+
+        <div class="cart-container">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically inserted here -->
+                <div class="empty-cart">
+                    <p>Your cart is empty</p>
+                    <a href="../index.html#categories" class="continue-shopping">Continue Shopping</a>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-title">Order Summary</div>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/Scripts/script_shopping_cart.js"></script>
+</body>
+
+</html>
