@@ -12,6 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function clickanywhere() {
+    const Sidebar = document.querySelector('.links_side_bar')
+    Sidebar.style.display = 'none'
+}
+
+function clicklink() {
+    const Sidebar = document.querySelector('.links_side_bar')
+    Sidebar.style.display = 'none'
+}
+
 import new_products from "../API/new_spare_api.js";
 
 
