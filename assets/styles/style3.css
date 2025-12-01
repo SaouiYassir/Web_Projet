@@ -69,131 +69,82 @@
    display: flex;
    justify-content: center;
    width: 10%;
- }
-
- header .account a {
+  }
+  
+  header .account a {
    text-decoration: none;
    background-color: white;
    padding: 10px;
    border-radius: 10px;
    transition: 0.5s;
    color: #121e3f;
- }
+  }
 
-
+  
  /*Get-Service section */
  main {
    width: 100%;
-   height: 100vh;
+   height: 80vh;
    display: flex;
    align-items: center;
- }
+  }
 
  main .Get-service {
-   width: 50%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   margin-left: 50px;
-   gap: 30px;
-
- }
-
- main .Get-service h1 {
-   color: #752713;
-   font-size: 45px;
-   margin-bottom: 20px;
- }
-
- main .Get-service form {
-   display: flex;
-   width: 60%;
-   flex-direction: column;
-   justify-content: center;
-
- }
-
- main .Get-service form input {
-   border: 1px solid #121e3f;
-   height: 40px;
-   padding-left: 20px;
-   background-color: #337dab24;
-   border-radius: 15px;
- }
-
- main .Get-service form select {
-   border: 1px solid #121e3f;
-   height: 40px;
-   padding-left: 20px;
-   background-color: #337dab24;
-   border-radius: 15px;
- }
-
- main .Get-service form .tt {
-   background-color: #2980b9;
-   color: white;
-   height: 40px;
-   border-radius: 15px;
- }
-
- main .image {
    width: 50%;
    height: 100%;
    display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-right: 50px;
- }
-
- main .image img {
-   width: 90%;
-   border-radius: 20px;
-   margin-top: 40px;
- }
-
-
- main .Get-service {
-   width: 50%;
-   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin-left: 50px;
    gap: 30px;
-
- }
-
+  }
+  main .image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  main .image img {
+    width: 90%;
+    border-radius: 20px;
+  }
+  
  main .Get-service h1 {
    color: #752713;
    font-size: 45px;
-   margin-bottom: 20px;
+   /* margin-bottom: 20px; */
  }
 
  main .Get-service form {
    display: flex;
-   width: 60%;
+   width: 100%;
    flex-direction: column;
    justify-content: center;
-
+   gap: 20px;
+  align-items: center;
  }
 
  main .Get-service form input {
+  width: 70%;
+  padding-left: 20px;
    border: 1px solid #121e3f;
-   font-size: 16px;
    height: 40px;
-   padding-left: 20px;
    background-color: #337dab24;
    border-radius: 15px;
  }
 
+ main .Get-service form input::placeholder {
+  color: black;
+ }
+
  main .Get-service form select {
    border: 1px solid #121e3f;
-   height: 40px;
-   font-size: 16px;
+   width: 70%;
    padding-left: 20px;
+   height: 40px;
    background-color: #337dab24;
    border-radius: 15px;
  }
@@ -201,25 +152,18 @@
  main .Get-service form .tt {
    background-color: #2980b9;
    color: white;
-   height: 30px;
-   border-radius: 15px;
+   width: 30%;
    border: none;
+   border-radius: 15px;
+   cursor: pointer;
  }
 
- main .image {
-   width: 50%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-right: 50px;
- }
 
- main .image img {
-   width: 90%;
-   border-radius: 20px;
-   margin-top: 40px;
- }
+main .Get-service form .tt:hover {
+  background-color: #121e3f;
+  transition: 0.8s;
+}
+
 
  footer {
    background-color: #121e3f;
@@ -498,25 +442,38 @@
      color: #121e3f;
    }
 
+   main {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 30px 0;
+   }
+
    main .Get-service h1 {
      font-size: 28px;
    }
 
-   main {
-     padding: 10px;
-   }
+   
 
    main .Get-service form {
      width: 100%;
    }
 
-   main .Get-service {
-     margin-left: 0;
+   main .Get-service form input {
+    width: 80%;
    }
+
+   main .Get-service form select {
+    width: 80%;
+   }
+
+   main .Get-service form .tt {
+    width: 50%;
+   }
+
 
    main .image img {
      width: 100%;
-     margin-top: 10px;
+     
    }
 
    main .shopping_cart {
