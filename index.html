@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./assets/styles/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/png">
     <title>Home</title>
@@ -20,12 +22,11 @@
         </div>
         <nav class="links">
             <a href="#categories">Categories</a>
-            <a href="#services">Services</a>
-            <a href="#contact_us">Contact Us</a>
+            <a href="#services_section">Services</a>
+            <a href="#ContactUs_Section">Contact Us</a>
         </nav>
         <div class="account">
-            <a href="">Register</a>
-            <a href="">Login</a>
+            <a href="pages/Shopping Cart/shopping_cart_page.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
         <nav class="links_side_bar">
             <div class="close_icon">
@@ -33,10 +34,8 @@
             </div>
             <ul>
                 <li><a onclick="clicklink()" href="#categories">Categories</a></li>
-                <li><a onclick="clicklink()" href="#services">Services</a></li>
-                <li><a onclick="clicklink()" href="#contact_us">Contact Us</a></li>
-                <li><a onclick="clicklink()" href="">Login</a></li>
-                <li><a onclick="clicklink()" href="">Register</a></li>
+                <li><a onclick="clicklink()" href="#services_section">Services</a></li>
+                <li><a onclick="clicklink()" href="#ContactUs_Section">Contact Us</a></li>
             </ul>
         </nav>
         <div class="menu_bar" onclick="openNav()">
@@ -47,9 +46,6 @@
     <main onclick="clickanywhere()">
         <section class="hero" id="hero">
             <h1 class="title"> Welcome to LuxAuto Parts & Services</h1>
-            <p class="subtitle">
-                Discover premium spare parts for luxury cars from Mercedes, BMW, Audi, Jaguar to land Rover, all in one place. we provide original quality parts and professional services including wheel replacement, exterior and interior upgrades, and complete technical maintenance, ensuring your vehicle stays as elegant and powerful as the day it was made.
-            </p>
         </section>
 
         <section class="categories" id="categories">
@@ -58,17 +54,17 @@
                 <div class="new_pieces">
                     <img src="assets/imgs/new_pieces_categorie.jpg" alt="">
                     <h3>NEW PIECES</h3>
-                    <a href="" class="nouveau_piece">See Catalogue</a>
+                    <a href="pages/new_spare_parts_page/new_spare_parts.html" class="nouveau_piece">See Catalogue</a>
                 </div>
                 <div class="old_pieces">
                     <img src="assets/imgs/old_pieces_categorie.jpg" alt="">
                     <h3>OLD PIECES</h3>
-                    <a href="" class="ancien_piece">See Catalogue</a>
+                    <a href="pages/old_spare_parts_page/old_spare_parts.html" class="ancien_piece">See Catalogue</a>
                 </div>
             </div>
         </section>
 
-        <section class="services" id="services">
+        <section class="services_section" id="services_section">
             <div class="title">
                 <h2>Our Services</h2>
                 <p>Enhance your luxury car’s performance and elegance with our professional services — from wheel
@@ -82,27 +78,27 @@
                 <div class="card">
                     <img src="assets/imgs/Wheel_Swap.jpg" alt="Wheel_Swap">
                     <h4>Wheel Swap</h4>
-                    <a href="#">Get Service</a>
+                    <a href="pages/Services Page/services.html">Get Service</a>
                 </div>
                 <div class="card">
-                    <img src="assets/imgs/Change_External_Pièces.jpg" alt="External_Pieces"> 
+                    <img src="assets/imgs/Change_External_Pièces.jpg" alt="External_Pieces">
                     <h4>Change External Pieces</h4>
-                    <a href="#">Get Service</a>
+                    <a href="pages/Services Page/services.html">Get Service</a>
                 </div>
                 <div class="card">
                     <img src="assets/imgs/Change_Internal_Pièces.jpg" alt="Internal_Pieces">
                     <h4>Change Internal Pièces</h4>
-                    <a href="#">Get Service</a>
+                    <a href="pages/Services Page/services.html">Get Service</a>
                 </div>
                 <div class="card">
-                    <img src="assets/imgs/Car_Technical_Maintenance.jpg" alt="Technical_Maintenance"> 
+                    <img src="assets/imgs/Car_Technical_Maintenance.jpg" alt="Technical_Maintenance">
                     <h4>Car Technical Maintenance</h4>
-                    <a href="#">Get Service</a>
+                    <a href="pages/Services Page/services.html">Get Service</a>
                 </div>
             </div>
         </section>
 
-        <section class="contact_us" id="contact_us">
+        <section class="ContactUs_Section" id="ContactUs_Section">
             <div class="ContactUs_Part1">
                 <div class="ContactUs_content">
                     <h2>Contact Us</h2>
@@ -164,6 +160,7 @@
                 </div>
             </div>
         </section>
+        <a href="pages/Shopping Cart/shopping_cart_page.html" class="shopping_cart"><i class="fa-solid fa-cart-shopping"></i></a>
     </main>
 
     <footer onclick="clickanywhere()">
@@ -179,9 +176,12 @@
                     Guéliz, Marrakech.
                 </p>
                 <div class="social_media_part">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook-f-brands-solid-full.svg" alt=""></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="assets/icons/instagram-brands-solid-full.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="assets/icons/linkedin-in-brands-solid-full.svg" alt=""></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="assets/icons/facebook-f-brands-solid-full.svg" alt=""></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="assets/icons/instagram-brands-solid-full.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img
+                            src="assets/icons/linkedin-in-brands-solid-full.svg" alt=""></i></a>
                 </div>
             </div>
             <div class="footer_form">
@@ -189,24 +189,29 @@
                     <h4>STAY CONNECTED</h4>
                     <form action="">
                         <input type="email" required name="email" placeholder="Email Address">
-                        <button type="submit" >Join</button>
+                        <button type="submit">Join</button>
                     </form>
                 </div>
                 <div class="about_us">
                     <h2>About Us :</h2>
                     <p>
-                        Our platform specializes in selling new and used spare parts for luxury cars, including brands like Audi, Mercedes, and BMW. We provide an easy online ordering and reservation system, with an optional repair service and 24/7 customer support. Combining performance, reliability, and intuitive design, our website ensures a smooth and complete user experience.
+                        Our platform specializes in selling new and used spare parts for luxury cars, including brands
+                        like Audi, Mercedes, and BMW. We provide an easy online ordering and reservation system, with an
+                        optional repair service and 24/7 customer support. Combining performance, reliability, and
+                        intuitive design, our website ensures a smooth and complete user experience.
                     </p>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; 2025 Luxe Cars | Designed by <b>Yassir SAOUI, Mohammed EL MOUTAOUAKIL, Aymane HAMOUCH</b></p>
+            <p>Copyright &copy; 2025 Luxe Cars | Designed by <b>Yassir SAOUI, Mohammed EL MOUTAOUAKIL, Aymane
+                    HAMOUCH</b></p>
         </div>
     </footer>
 
 
 
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
     <script src="assets/Scripts/script1.js"></script>
 </body>
 

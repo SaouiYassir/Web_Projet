@@ -13,21 +13,23 @@ main {
   /* Header Part */
   header {
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: #121e3f;
     display: flex;
+    position: sticky;
+    top: 0;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
     transition: 0.5s;
     z-index: 100;
   }
-  header .links_side_bar{
+  header .links_side_bar {
     display: none;
   }
-   header .menu_bar {
+  header .menu_bar {
     display: none;
-   }
+  }
   header .logo_header {
     width: 15%;
     justify-content: center;
@@ -50,13 +52,13 @@ main {
     color: white;
     position: relative;
   }
-  header.active {
+  /* header.active {
     position: fixed;
     background-color: #121e3f;
     color: white;
     height: 60px;
-  }
-  header.active .logo_header img {
+  } */
+  /* header.active .logo_header img {
     width: 150px;
   }
   header.active .links a {
@@ -67,7 +69,7 @@ main {
   }
   header.active .account a {
     padding: 7px;
-  }
+  } */
   header .links a::before {
     content: "";
     width: 100%;
@@ -79,8 +81,8 @@ main {
   }
   header .account {
     display: flex;
-    gap: 30px;
     justify-content: center;
+    width: 10%;
   }
   header .account a {
     text-decoration: none;
@@ -88,11 +90,10 @@ main {
     padding: 10px;
     border-radius: 10px;
     transition: 0.5s;
-    color: #121E3F;
-    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
-      "Times New Roman", serif;
+    color: #121e3f;
   }
 
+  /* Main Part */
   /* Hero Section */
   main .hero {
     width: 100%;
@@ -103,27 +104,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 400px;
   }
   main .hero h1 {
-   color: #e9ebef;
+    color: #e9ebef;
     text-align: center;
     display: flex;
     justify-content: center;
     font-size: 55px;
     font-family: "Momo Trust Display", sans-serif;
-    padding: 60px 0;
-  }
-  main .hero p {
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    padding: 0 30px;
+
+    margin-top: 40px;
   }
 
-  /* Categories class */
+  /* Categories Section */
   main .categories {
     width: 100%;
     height: 100vh;
@@ -144,10 +137,6 @@ main {
     width: 100%;
     height: 85%;
     background-color: #121e3f;
-    background-image: url(../imgs/categories_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     padding: 60px 0;
     display: flex;
     justify-content: space-around;
@@ -157,19 +146,20 @@ main {
   main .categories .categories_div .new_pieces img {
     width: 100%;
   }
-  main .categories .categories_div .old_pieces, main .categories .categories_div .new_pieces {
+  main .categories .categories_div .old_pieces,
+  main .categories .categories_div .new_pieces {
     width: 25%;
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.5);
     padding: 30px;
     border-radius: 20px;
     height: 60vh;
     justify-content: space-around;
   }
-  main .categories .categories_div .nouveau_piece, main .categories .categories_div .ancien_piece {
+  main .categories .categories_div .nouveau_piece,
+  main .categories .categories_div .ancien_piece {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -185,6 +175,12 @@ main {
     justify-content: center;
     align-items: center;
   }
+
+  main .categories .categories_div .nouveau_piece:hover,
+  main .categories .categories_div .ancien_piece:hover {
+    background-color: #2980b9;
+    transition: 0.3s;
+  }
   main .categories .categories_div h3 {
     font-family: "Momo Trust Display", sans-serif;
     color: #121e3f;
@@ -192,7 +188,7 @@ main {
   }
 
   /* Services Section */
-  .services {
+  .services_section {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -201,7 +197,7 @@ main {
     justify-content: center;
     background-color: white;
   }
-  .services .title {
+  .services_section .title {
     width: 100%;
     height: 25%;
     display: flex;
@@ -209,14 +205,14 @@ main {
     align-items: center;
     justify-content: center;
     background-color: white;
-    padding: 0 40px;
+    padding: 0px 50px;
   }
   .title h2 {
     color: #2980b9;
     font-family: "Momo Trust Display", sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 55px;
+    font-size: 50px;
     position: relative;
     margin-bottom: 20px;
   }
@@ -238,7 +234,7 @@ main {
     font-style: normal;
     font-size: 14px;
   }
-  .services .services_cards {
+  .services_section .services_cards {
     width: 100%;
     height: 75%;
     display: flex;
@@ -274,7 +270,7 @@ main {
     font-weight: 400;
     font-style: normal;
   }
-  .services .card a {
+  .services_section .card a {
     padding: 16px 32px;
     background-color: #2980b9;
     position: relative;
@@ -287,7 +283,7 @@ main {
   }
 
   /* Contact Us Section */
-  .contact_us {
+  .ContactUs_Section {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -298,7 +294,7 @@ main {
     padding: 20px;
     gap: 20px;
   }
-  .contact_us .ContactUs_Part1 {
+  .ContactUs_Section .ContactUs_Part1 {
     width: 100%;
     height: 65%;
     display: flex;
@@ -384,7 +380,7 @@ main {
     height: 100%;
     border-radius: 4px;
   }
-  .contact_us .ContactUs_Part2 {
+  .ContactUs_Section .ContactUs_Part2 {
     width: 100%;
     height: 35%;
     background-color: #2980b9;
@@ -423,6 +419,11 @@ main {
     justify-content: center;
     align-items: center;
   }
+
+  main .shopping_cart {
+    display: none;
+  }
+
   /* Footer Part */
   footer {
     background-color: #121e3f;
@@ -445,7 +446,7 @@ main {
   footer .footer_all .footer_left p {
     color: white;
     font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
     text-align: center;
   }
@@ -485,7 +486,9 @@ main {
       "Times New Roman", serif;
   }
   footer .footer_all .footer_form .footer_form_connect form {
-    width: 60%;    
+    width: 100%;
+    justify-content: center;
+    display: flex;
   }
   footer .footer_all .footer_form .footer_form_connect input {
     width: 280px;
@@ -498,7 +501,6 @@ main {
     background-color: #121e3f;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    margin-left: 25%;
   }
   footer .footer_all .footer_form .footer_form_connect input::placeholder {
     color: white;
@@ -511,7 +513,6 @@ main {
     border-bottom-right-radius: 15px;
     border: none;
     background-color: #2980b9;
-    position: absolute;
     color: white;
     cursor: pointer;
   }
@@ -545,5 +546,1116 @@ main {
     align-items: center;
     color: white;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  /* Header Part */
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: #121e3f;
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header .links_side_bar {
+    display: none;
+  }
+  header .menu_bar {
+    display: none;
+  }
+  header .logo_header {
+    width: 15%;
+    justify-content: center;
+    display: flex;
+  }
+  header .logo_header img {
+    width: 80%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  header .links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+  header .links a {
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  header .links a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  header .account {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  header .account a {
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #121e3f;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+  }
+
+  /* Main Part */
+  /* Hero Section */
+  main .hero {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imgs/hero_background.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .hero h1 {
+    color: #e9ebef;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: "Momo Trust Display", sans-serif;
+    margin-top: 30px;
+  }
+
+  /* Categories Section */
+  main .categories {
+    width: 100%;
+  }
+  main .categories h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    color: #121e3f;
+    font-family: "Momo Trust Display", sans-serif;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  main .categories .categories_div {
+    width: 100%;
+    height: 85%;
+    background-color: #121e3f;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  main .categories .categories_div .old_pieces img,
+  main .categories .categories_div .new_pieces img {
+    width: 100%;
+  }
+  main .categories .categories_div .old_pieces,
+  main .categories .categories_div .new_pieces {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    height: 55vh;
+    justify-content: space-around;
+  }
+  main .categories .categories_div .nouveau_piece,
+  main .categories .categories_div .ancien_piece {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+    background-color: #121e3f;
+    border-radius: 50px;
+    border: 0px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .categories .categories_div h3 {
+    font-family: "Momo Trust Display", sans-serif;
+    color: #121e3f;
+    font-size: 25px;
+  }
+
+  /* Services section */
+  .services_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+  }
+
+  .services_section .title {
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2980b9;
+    padding: 10px 20px;
+  }
+
+  .title h2 {
+    font-size: 46px;
+    text-align: center;
+    color: white;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .title h2::after{
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+  }
+
+  .title p {
+    text-align: center;
+    color: white;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
+
+  .services_section .services_cards {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    top: 15%;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .services_cards .card {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 white;
+    padding: 20px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card h4 {
+    color: #2980b9;
+    text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card a {
+    padding: 16px 32px;
+    background-color: #2980b9;
+    position: relative;
+    text-decoration: none;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    border-radius: 32px;
+  }
+
+  /* Contact Us Section */
+
+  .ContactUs_Section {
+    width: 100%;
+    position: relative;
+  }
+
+  .ContactUs_Section .ContactUs_Part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .ContactUs_Part1 .ContactUs_content {
+    width: 100%;
+    height: 60%;
+    border: none;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ContactUs_content h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 33px;
+    text-align: center;
+    color: #2980b9;
+
+  }
+
+  .ContactUs_content p {
+    color: #2980b9;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .ContactUs_content hr {
+    width: 50%;
+    border: 1px solid #2980b9;
+  }
+
+  .ContactUs_content form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .ContactUs_content form input {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 40px;
+    padding: 0 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+  }
+
+  .ContactUs_content form input::placeholder {
+    color: black;
+  }
+  .ContactUs_content form button {
+    width: 30%;
+    margin-top: 10px;
+    height: 40px;
+    background-color: #2980b9;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .ContactUs_Part1 .ContactUs_image {
+    width: 100%;
+  }
+
+  .ContactUs_Section .ContactUs_Part2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #2980b9;
+  }
+
+  .ContactUs_Part2 .social_card {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    gap: 20px;
+    border-radius: 8px;
+    color: #2980b9;
+  }
+  .social_card div {
+    display: flex;
+    align-items: bottom;
+    justify-content: left;
+    gap: 10px;
+    font-size: 22px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .social_card .infos {
+    color: black;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  main .shopping_cart {
+    display: none;
+  }
+
+  /* Footer Part */
+  footer {
+    background-color: #121e3f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_all {
+    width: 100%;
+    display: flex;
+  }
+  footer .footer_all .footer_left {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  footer .footer_all .footer_left p {
+    color: white;
+    font-size: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: center;
+  }
+  footer .social_media_part {
+    gap: 20px;
+    display: flex;
+  }
+  footer .social_media_part img {
+    color: #2980b9;
+    width: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #2980b9;
+    border-radius: 5px;
+  }
+  footer .footer_all .footer_form {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footer_all .footer_form .footer_form_connect {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 25px 0;
+  }
+  footer .footer_all .footer_form .footer_form_connect h4 {
+    color: #2980b9;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+  }
+  footer .footer_all .footer_form .footer_form_connect form {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  footer .footer_all .footer_form .footer_form_connect input {
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+    border: 2px solid #2980b9;
+    color: white;
+    background-color: #121e3f;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  footer .footer_all .footer_form .footer_form_connect input::placeholder {
+    color: white;
+  }
+  footer .footer_all .footer_form .footer_form_connect button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+  }
+  footer .footer_all .footer_form .about_us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+  }
+  footer .footer_all .footer_form .about_us h2 {
+    color: #2980b9;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+  }
+  footer .footer_all .footer_form .about_us p {
+    color: white;
+    padding-right: 50px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px 40px;
+  }
+  footer .copyright {
+    width: 100%;
+    background-color: rgb(44, 42, 42);
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+  }
+
+  main img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Header Part */
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: #121e3f;
+    display: flex;
+    top: 0;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header .links,
+  header .account {
+    display: none;
+  }
+  header .logo_header {
+    width: 60%;
+    justify-content: first baseline;
+    display: flex;
+  }
+  header .logo_header img {
+    width: 150px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  header .menu_bar {
+    justify-content: end;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  header .menu_bar i {
+    text-decoration: none;
+    color: white;
+  }
+  header .links_side_bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #0f2e8552;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 50px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+header .links_side_bar.open {
+    transform: translateX(0);
+}
+  header .links_side_bar .close_icon {
+    color: #121e3f;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  header .links_side_bar ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    margin-top: 30px;
+  }
+  header .links_side_bar ul li {
+    width: 100%;
+  }
+  header .links_side_bar ul li a {
+    text-decoration: none;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+    width: 100%;
+    color: white;
+  }
+  header .links_side_bar ul .account_side_bar {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #121e3f;
+  }
+  
+
+  /* Main Part */
+  /* Hero Section */
+  main .hero {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../imgs/hero_background.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .hero h1 {
+    color: #e9ebef;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Momo Trust Display", sans-serif;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  /* Categories Section */
+  main .categories {
+    width: 100%;
+  }
+  main .categories h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #121e3f;
+    font-family: "Momo Trust Display", sans-serif;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  main .categories .categories_div {
+    width: 100%;
+    height: 85%;
+    background-color: #121e3f;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  main .categories .categories_div .old_pieces img,
+  main .categories .categories_div .new_pieces img {
+    width: 100%;
+  }
+  main .categories .categories_div .old_pieces,
+  main .categories .categories_div .new_pieces {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  main .categories .categories_div .nouveau_piece,
+  main .categories .categories_div .ancien_piece {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    width: 90%;
+    text-align: center;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+    background-color: #121e3f;
+    border-radius: 50px;
+    border: 0px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .categories .categories_div h3 {
+    font-family: "Momo Trust Display", sans-serif;
+    color: #121e3f;
+    font-size: 15px;
+  }
+
+  /* Services section */
+  .services_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+  }
+
+  .services_section .title {
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2980b9;
+    padding: 10px 20px;
+  }
+
+  .title h2 {
+    font-size: 46px;
+    text-align: center;
+    color: white;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .title h2::after{
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+  }
+
+  .title p {
+    text-align: center;
+    color: white;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
+
+  .services_section .services_cards {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    top: 15%;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .services_cards .card {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 white;
+    padding: 20px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card h4 {
+    color: #2980b9;
+    text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card a {
+    padding: 16px 32px;
+    background-color: #2980b9;
+    position: relative;
+    text-decoration: none;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    border-radius: 32px;
+  }
+
+  /* Contact Us Section */
+
+  .ContactUs_Section {
+    width: 100%;
+    position: relative;
+  }
+
+  .ContactUs_Section .ContactUs_Part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .ContactUs_Part1 .ContactUs_content {
+    width: 100%;
+    height: 60%;
+    border: none;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ContactUs_content h2 {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 33px;
+    text-align: center;
+    color: #2980b9;
+
+  }
+
+  .ContactUs_content p {
+    color: #2980b9;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .ContactUs_content hr {
+    width: 50%;
+    border: 1px solid #2980b9;
+  }
+
+  .ContactUs_content form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .ContactUs_content form input {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 40px;
+    padding: 0 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+  }
+
+  .ContactUs_content form input::placeholder {
+    color: black;
+  }
+  .ContactUs_content form button {
+    width: 30%;
+    margin-top: 10px;
+    height: 40px;
+    background-color: #2980b9;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .ContactUs_Part1 .ContactUs_image {
+    width: 100%;
+  }
+
+  .ContactUs_Section .ContactUs_Part2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #2980b9;
+  }
+
+  .ContactUs_Part2 .social_card {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    gap: 20px;
+    border-radius: 8px;
+    color: #2980b9;
+  }
+  .social_card div {
+    display: flex;
+    align-items: bottom;
+    justify-content: left;
+    gap: 10px;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .social_card .infos {
+    color: black;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Shopping Icon*/
+  main .shopping_cart {
+    color: white;
+    background-color: #2980b9;
+    padding: 15px;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
+  }
+
+  /* Footer Part */
+  footer {
+    background-color: #121e3f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_all {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  footer .footer_all .footer_left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0;
+  }
+  footer .footer_all .footer_left p {
+    color: white;
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: center;
+  }
+  footer .social_media_part {
+    gap: 20px;
+    display: flex;
+  }
+  footer .social_media_part img {
+    color: #2980b9;
+    width: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #2980b9;
+    border-radius: 5px;
+  }
+  footer .footer_all .footer_form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footer_all .footer_form .footer_form_connect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 25px 0;
+  }
+  footer .footer_all .footer_form .footer_form_connect h4 {
+    color: #2980b9;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+  }
+  footer .footer_all .footer_form .footer_form_connect form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer_all .footer_form .footer_form_connect input {
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #2980b9;
+    color: white;
+    background-color: #121e3f;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  footer .footer_all .footer_form .footer_form_connect input::placeholder {
+    color: white;
+  }
+  footer .footer_all .footer_form .footer_form_connect button {
+    width: 25%;
+    height: 40px;
+    font-size: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+  }
+  footer .footer_all .footer_form .about_us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  footer .footer_all .footer_form .about_us h2 {
+    color: #2980b9;
+    font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+      "Times New Roman", serif;
+    font-size: 18px;
+  }
+  footer .footer_all .footer_form .about_us p {
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px 0;
+  }
+  footer .copyright {
+    width: 100%;
+    background-color: rgb(44, 42, 42);
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+  }
+
+  main img {
+    width: 100%;
   }
 }
