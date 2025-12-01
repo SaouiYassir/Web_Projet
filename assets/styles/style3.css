@@ -1,0 +1,585 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ .shopping_cart {
+   display: none;
+ }
+
+ header {
+   width: 100%;
+   height: 70px;
+   background-color: #121e3f;
+   display: flex;
+   position: sticky;
+   top: 0;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 40px;
+   transition: 0.5s;
+   z-index: 100;
+ }
+
+ header .links_side_bar {
+   display: none;
+ }
+
+ header .menu_bar {
+   display: none;
+ }
+
+ header .logo_header {
+   width: 15%;
+   justify-content: center;
+   display: flex;
+ }
+
+ header .logo_header img {
+   width: 80%;
+   cursor: pointer;
+ }
+
+ header .links {
+   display: flex;
+   width: 50%;
+   justify-content: space-between;
+ }
+
+ header .links a {
+   font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+     "Times New Roman", serif;
+   text-decoration: none;
+   color: white;
+   position: relative;
+ }
+
+ header .links a::before {
+   content: "";
+   width: 100%;
+   height: 2px;
+   background-color: white;
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+ }
+
+ header .account {
+   display: flex;
+   justify-content: center;
+   width: 10%;
+ }
+
+ header .account a {
+   text-decoration: none;
+   background-color: white;
+   padding: 10px;
+   border-radius: 10px;
+   transition: 0.5s;
+   color: #121e3f;
+ }
+
+
+ /*Get-Service section */
+ main {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+ }
+
+ main .Get-service {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-left: 50px;
+   gap: 30px;
+
+ }
+
+ main .Get-service h1 {
+   color: #752713;
+   font-size: 45px;
+   margin-bottom: 20px;
+ }
+
+ main .Get-service form {
+   display: flex;
+   width: 60%;
+   flex-direction: column;
+   justify-content: center;
+
+ }
+
+ main .Get-service form input {
+   border: 1px solid #121e3f;
+   height: 40px;
+   padding-left: 20px;
+   background-color: #337dab24;
+   border-radius: 15px;
+ }
+
+ main .Get-service form select {
+   border: 1px solid #121e3f;
+   height: 40px;
+   padding-left: 20px;
+   background-color: #337dab24;
+   border-radius: 15px;
+ }
+
+ main .Get-service form .tt {
+   background-color: #2980b9;
+   color: white;
+   height: 30px;
+   border-radius: 15px;
+ }
+
+ main .image {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 50px;
+ }
+
+ main .image img {
+   width: 90%;
+   border-radius: 20px;
+   margin-top: 40px;
+ }
+
+
+ main .Get-service {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-left: 50px;
+   gap: 30px;
+
+ }
+
+ main .Get-service h1 {
+   color: #752713;
+   font-size: 45px;
+   margin-bottom: 20px;
+ }
+
+ main .Get-service form {
+   display: flex;
+   width: 60%;
+   flex-direction: column;
+   justify-content: center;
+
+ }
+
+ main .Get-service form input {
+   border: 1px solid #121e3f;
+   font-size: 16px;
+   height: 40px;
+   padding-left: 20px;
+   background-color: #337dab24;
+   border-radius: 15px;
+ }
+
+ main .Get-service form select {
+   border: 1px solid #121e3f;
+   height: 40px;
+   font-size: 16px;
+   padding-left: 20px;
+   background-color: #337dab24;
+   border-radius: 15px;
+ }
+
+ main .Get-service form .tt {
+   background-color: #2980b9;
+   color: white;
+   height: 30px;
+   border-radius: 15px;
+   border: none;
+ }
+
+ main .image {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 50px;
+ }
+
+ main .image img {
+   width: 90%;
+   border-radius: 20px;
+   margin-top: 40px;
+ }
+
+ footer {
+   background-color: #121e3f;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+ }
+
+ footer .footer_all {
+   width: 100%;
+   display: flex;
+ }
+
+ footer .footer_all .footer_left {
+   width: 25%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+   gap: 5px;
+ }
+
+ footer .footer_all .footer_left p {
+   color: white;
+   font-size: 15px;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   padding: 10px;
+   text-align: center;
+ }
+
+ footer .social_media_part {
+   gap: 20px;
+   display: flex;
+ }
+
+ footer .social_media_part img {
+   color: #2980b9;
+   width: 30px;
+   text-decoration: none;
+   cursor: pointer;
+   background-color: #2980b9;
+   border-radius: 5px;
+ }
+
+ footer .footer_all .footer_form {
+   width: 75%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ footer .footer_all .footer_form .footer_form_connect {
+   height: 35%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   padding: 25px 0;
+ }
+
+ footer .footer_all .footer_form .footer_form_connect h4 {
+   color: #2980b9;
+   font-size: 20px;
+   text-align: center;
+   font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+     "Times New Roman", serif;
+ }
+
+ footer .footer_all .footer_form .footer_form_connect form {
+   width: 100%;
+   justify-content: center;
+   display: flex;
+ }
+
+ footer .footer_all .footer_form .footer_form_connect input {
+   width: 280px;
+   height: 40px;
+   padding: 10px;
+   padding-left: 30px;
+   font-size: 15px;
+   border: 2px solid #2980b9;
+   color: white;
+   background-color: #121e3f;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+ }
+
+ footer .footer_all .footer_form .footer_form_connect input::placeholder {
+   color: white;
+ }
+
+ footer .footer_all .footer_form .footer_form_connect button {
+   width: 100px;
+   height: 40px;
+   font-size: 15px;
+   border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+   border: none;
+   background-color: #2980b9;
+   color: white;
+   cursor: pointer;
+ }
+
+ footer .footer_all .footer_form .about_us {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 20px 60px;
+   display: flex;
+   align-items: center;
+ }
+
+ footer .footer_all .footer_form .about_us h2 {
+   color: #2980b9;
+   font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+     "Times New Roman", serif;
+ }
+
+ footer .footer_all .footer_form .about_us p {
+   color: white;
+   padding-right: 50px;
+   text-align: center;
+   line-height: 1.5;
+   padding: 10px 40px;
+ }
+
+ footer .copyright {
+   width: 100%;
+   background-color: rgb(44, 42, 42);
+   height: 50px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 15px;
+ }
+
+
+ /* TABLETTES (max-width: 992px) */
+ @media (max-width: 992px) {
+
+   main {
+     flex-direction: column;
+     height: auto;
+     padding: 20px 0;
+   }
+
+   main .Get-service,
+   main .image {
+     width: 90%;
+     margin: 0;
+   }
+
+   main .Get-service h1 {
+     font-size: 35px;
+   }
+
+   main .Get-service form {
+     width: 80%;
+   }
+
+   main .image img {
+     width: 100%;
+     margin-top: 20px;
+   }
+ }
+
+ /* SMARTPHONES (max-width: 600px) */
+ @media (max-width: 600px) {
+
+   header {
+     width: 100%;
+     height: 70px;
+     background-color: #121e3f;
+     display: flex;
+     top: 0;
+     position: sticky;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 40px;
+     transition: 0.5s;
+     z-index: 100;
+   }
+
+   header .links,
+   header .account {
+     display: none;
+   }
+
+   header .logo_header {
+     width: 60%;
+     justify-content: first baseline;
+     display: flex;
+   }
+
+   header .logo_header img {
+     width: 150px;
+     transition: 0.5s;
+     cursor: pointer;
+   }
+
+   header .menu_bar {
+     justify-content: end;
+     display: flex;
+     font-size: 20px;
+     cursor: pointer;
+   }
+
+   header .menu_bar i {
+     text-decoration: none;
+     color: white;
+   }
+
+   header .links_side_bar {
+     display: flex;
+     position: fixed;
+     top: 0;
+     right: 0;
+     height: 100vh;
+     width: 250px;
+     z-index: 999;
+     background-color: #0f2e8552;
+     backdrop-filter: blur(10px);
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     padding: 40px;
+     gap: 50px;
+     transform: translateX(100%);
+     transition: transform 0.4s ease;
+   }
+
+   header .links_side_bar.open {
+     transform: translateX(0);
+   }
+
+   header .links_side_bar .close_icon {
+     color: #121e3f;
+     background-color: white;
+     font-size: 16px;
+     cursor: pointer;
+     padding: 10px;
+     border-radius: 10px;
+   }
+
+   header .links_side_bar ul {
+     position: relative;
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     gap: 60px;
+     margin-top: 30px;
+   }
+
+   header .links_side_bar ul li {
+     width: 100%;
+   }
+
+   header .links_side_bar ul li a {
+     text-decoration: none;
+     font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+       "Times New Roman", serif;
+     width: 100%;
+     color: white;
+   }
+
+   header .links_side_bar ul .account_side_bar {
+     background-color: white;
+     padding: 10px;
+     border-radius: 10px;
+     transition: 0.5s;
+     color: #121e3f;
+   }
+
+   main .Get-service h1 {
+     font-size: 28px;
+   }
+
+   main {
+     padding: 10px;
+   }
+
+   main .Get-service form {
+     width: 100%;
+   }
+
+   main .Get-service {
+     margin-left: 0;
+   }
+
+   main .image img {
+     width: 100%;
+     margin-top: 10px;
+   }
+
+   main .shopping_cart {
+     display: block;
+     color: white;
+     background-color: #2980b9;
+     padding: 15px;
+     border-radius: 40px;
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     cursor: pointer;
+     z-index: 1000;
+     font-size: 20px;
+   }
+
+   footer .footer_all {
+     flex-direction: column-reverse;
+   }
+
+   footer .footer_all .footer_left {
+     width: 100%;
+     padding: 10px 0;
+   }
+
+   footer .footer_all .footer_left p {
+     font-size: 12px;
+   }
+
+   footer .social_media_part img {
+     width: 25px;
+   }
+
+   footer .footer_all .footer_form {
+     width: 100%;
+   }
+
+   footer .footer_all .footer_form .footer_form_connect h4 {
+     font-size: 18px;
+   }
+
+   footer .footer_all .footer_form .footer_form_connect input {
+     width: 60%;
+   }
+
+   footer .footer_all .footer_form .footer_form_connect button {
+     width: 25%;
+   }
+
+   footer .footer_all .footer_form .about_us {
+     padding: 10px 20px;
+   }
+
+   footer .footer_all .footer_form .about_us h2 {
+     font-size: 18px;
+
+   }
+
+   footer .footer_all .footer_form .about_us p {
+     padding: 10px 0;
+   }
+
+   footer .copyright {
+     font-size: 10px;
+   }
+ }
