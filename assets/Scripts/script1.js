@@ -1,4 +1,9 @@
-gsap.fromTo(".hero .title", { opacity: 0, y: -50 }, { opacity: 1, y: 0, duration: 1 })
+gsap.fromTo(".hero .title", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 })
+gsap.fromTo(".hero", { opacity: 0 }, { opacity: 1, duration: 1 })
+gsap.fromTo(".logo_header", {opacity: 0, y: -50 }, {opacity: 1, y: 0, duration: 1})
+gsap.fromTo(".links", {opacity: 0, y: -50 }, {opacity: 1, y: 0, duration: 1})
+gsap.fromTo(".account", {opacity: 0, y: -50 }, {opacity: 1, y: 0, duration: 1})
+
 
 
 let logo_header = document.getElementsByClassName("logo_header")[0];
