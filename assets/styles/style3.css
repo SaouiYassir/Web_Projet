@@ -81,145 +81,89 @@
  }
 
 
- /*Get-Service section */
+
  main {
    width: 100%;
-   height: 100vh;
+   height: 80vh;
    display: flex;
    align-items: center;
- }
-
- main .Get-service {
-   width: 50%;
-   display: flex;
-   flex-direction: column;
    justify-content: center;
-   align-items: center;
-   text-align: center;
-   margin-left: 50px;
-   gap: 30px;
-
  }
 
- main .Get-service h1 {
-   color: #752713;
-   font-size: 45px;
-   margin-bottom: 20px;
+ .image {
+   width: 40%;
+   padding: 20px;
  }
 
- main .Get-service form {
-   display: flex;
-   width: 60%;
-   flex-direction: column;
-   justify-content: center;
-
- }
-
- main .Get-service form input {
-   border: 1px solid #121e3f;
-   height: 40px;
-   padding-left: 20px;
-   background-color: #337dab24;
-   border-radius: 15px;
- }
-
- main .Get-service form select {
-   border: 1px solid #121e3f;
-   height: 40px;
-   padding-left: 20px;
-   background-color: #337dab24;
-   border-radius: 15px;
- }
-
- main .Get-service form .tt {
-   background-color: #2980b9;
-   color: white;
-   height: 40px;
-   border-radius: 15px;
- }
-
- main .image {
-   width: 50%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-right: 50px;
- }
-
- main .image img {
-   width: 90%;
+ img {
+   width: 100%;
    border-radius: 20px;
-   margin-top: 40px;
  }
 
-
- main .Get-service {
-   width: 50%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   margin-left: 50px;
-   gap: 30px;
-
- }
-
- main .Get-service h1 {
-   color: #752713;
-   font-size: 45px;
-   margin-bottom: 20px;
- }
-
- main .Get-service form {
-   display: flex;
+ .Get-service {
    width: 60%;
+   display: flex;
    flex-direction: column;
-   justify-content: center;
+   gap: 40px;
+   padding: 30px;
+ }
+
+ h1 {
+   text-align: center;
+   font-size: 45px;
+   font-family: "Montserrat", Cambria, Cochin, Georgia, Times,
+     "Times New Roman", serif;
+   color: #752713;
 
  }
 
- main .Get-service form input {
-   border: 1px solid #121e3f;
-   font-size: 16px;
-   height: 40px;
-   padding-left: 20px;
-   background-color: #337dab24;
-   border-radius: 15px;
+ .srv_frm {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin: 0 auto;
+   width: 70%;
  }
 
- main .Get-service form select {
-   border: 1px solid #121e3f;
-   height: 40px;
-   font-size: 16px;
-   padding-left: 20px;
-   background-color: #337dab24;
-   border-radius: 15px;
- }
-
- main .Get-service form .tt {
-   background-color: #2980b9;
-   color: white;
+ .ipt {
+   width: 80%;
    height: 30px;
-   border-radius: 15px;
+   border: 1px solid black;
+   border-radius: 10px;
+   padding: 10px;
+   color: black;
+   background-color: #4088b83b;
+   margin: 0 auto;
+ }
+
+ select {
+   margin: 0 auto;
+   width: 80%;
+   height: 30px;
+   border: 1px solid black;
+   border-radius: 10px;
+   padding-left: 10px;
+   color: black;
+   background-color: #4088b83b;
+ }
+
+ .btn_srv {
+   margin: 0 auto;
+   width: 25%;
+   height: 30px;
    border: none;
+   border-radius: 10px;
+   background-color: #121e3f;
+   color: white;
+   transition: 0.5s ease;
+   cursor: pointer;
  }
 
- main .image {
-   width: 50%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-right: 50px;
+ .btn_srv:hover {
+   background-color: #2980b9;
  }
 
- main .image img {
-   width: 90%;
-   border-radius: 20px;
-   margin-top: 40px;
- }
+
 
  footer {
    background-color: #121e3f;
@@ -363,32 +307,23 @@
 
  /* TABLETTES (max-width: 992px) */
  @media (max-width: 992px) {
+  main {
+    flex-direction: column-reverse;
+    gap: 10px;
+    height: fit-content;
+  }
 
-   main {
-     flex-direction: column;
-     height: auto;
-     padding: 20px 0;
-   }
+  .image {
+    width: 100%;
+  }
 
-   main .Get-service,
-   main .image {
-     width: 90%;
-     margin: 0;
-   }
+  .Get-service {
+    width: 100%;
+  }
 
-   main .Get-service h1 {
-     font-size: 35px;
-   }
-
-   main .Get-service form {
-     width: 80%;
-   }
-
-   main .image img {
-     width: 100%;
-     margin-top: 20px;
-   }
- }
+  .srv_frm {
+    width: 100%;
+  }
 
  /* SMARTPHONES (max-width: 600px) */
  @media (max-width: 600px) {
@@ -498,26 +433,34 @@
      color: #121e3f;
    }
 
-   main .Get-service h1 {
-     font-size: 28px;
-   }
-
    main {
-     padding: 10px;
-   }
+    flex-direction: column-reverse;
+    gap: 10px;
+    height: fit-content;
+  }
 
-   main .Get-service form {
-     width: 100%;
-   }
+  .image {
+    width: 100%;
+  }
 
-   main .Get-service {
-     margin-left: 0;
-   }
+  .Get-service {
+    width: 100%;
+  }
 
-   main .image img {
-     width: 100%;
-     margin-top: 10px;
-   }
+  .srv_frm {
+    width: 100%;
+  }
+
+  .ipt {
+    width: 100%;
+    height: 35px;
+  }
+
+  select {
+    width: 100%;
+    height: 35px;
+  }
+ }
 
    main .shopping_cart {
      display: block;
