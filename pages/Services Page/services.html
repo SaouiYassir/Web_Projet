@@ -46,12 +46,10 @@
     <main>
         <section class="Get-service">
             <h1>Get Service</h1>
-            <form action="">
-                <input type="text" placeholder="Full name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]+(?: [A-Za-zÀ-ÖØ-öø-ÿ]+)*$" required> 
-                
-                <input type="email" placeholder="Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$" required> 
-                
-                <input type="date" pattern="^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$" required>
+            <form action="" class="srv_frm">
+                <input class="ipt" type="text" placeholder="Full name" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]+(?: [A-Za-zÀ-ÖØ-öø-ÿ]+)*$" required>         
+                <input class="ipt" type="email" placeholder="Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$" required>                 
+                <input class="ipt" type="date" pattern="^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$" required>
 
                 
                 <select placeholder="Car model" id="">
@@ -70,7 +68,8 @@
                     <option>Change Internal pieces</option>
                     <option>Car technical Maintenance</option>
                 </select> 
-                <input type="submit" class="tt" value="Get The Service" required> 
+                <!-- <input type="submit" class="tt" value="Get The Service" required>  -->
+                 <button class="btn_srv" type="submit">Submit</button>
             </form>
         </section>
         <section class="image">
